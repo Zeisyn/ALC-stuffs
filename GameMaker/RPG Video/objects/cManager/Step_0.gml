@@ -7,10 +7,12 @@ switch(combatPhase){
 			ds_list_add(global.units, unit);
 		}
 		combatPhase = phase.startTurn;
+		
 	break;
 	
 	
 	case phase.startTurn:
+		BubbleSort(global.units);
 		combatPhase = phase.wait;
 	break;
 	
